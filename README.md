@@ -1,7 +1,7 @@
 # Azure Enterprise Tenant Architecture
 
 ## Project Overview
-This repository documents the creation of a Microsoft Azure tenant designed for a hypothetical enterprise, the 'Practice Company'. 
+This repository documents the creation of a Microsoft Azure tenant designed for a hypothetical enterprise, an IT startup called `Practice Company`. 
 
 
 ## Engineering Phases
