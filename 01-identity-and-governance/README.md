@@ -30,5 +30,5 @@ Administrative boundaries were set by implementing Administrative Units (AU). Ea
 The Director of each group was then assigned the *User Administrator* role scoped to the AU, allowing the Director to have administrator control over their team and preventing the Director from accessing the other departments.
 
 ![Microsoft Entra AU Roles](./images/entra-au-role.png)
-*Figure 4: A **User Administrator** role was assigned to each Director in their respective AU, granting them privileges over the groups that are assigned to the AU.
+*Figure 4: A **User Administrator** role was assigned to each Director in their respective AU, granting them privileges over the groups that are assigned to the AU.*
  
