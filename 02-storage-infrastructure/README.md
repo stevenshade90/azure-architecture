@@ -32,5 +32,13 @@ foreach ($Dept in $Departments)
 
 Selecting **All Resources** will show that each storage account was created with the appropriate naming: 
 
-![Storage Account Confirmation](./02-storage-infrastructure/images/storage-all-storage-accounts.png)
+![Storage Account Confirmation](./images/storage-all-storage-accounts.png)
 *Figure 2: Image showing the successful creation of all storage accounts created by the PowerShell script.*
+
+### Step 2: Create Blob Containers Using Azure Storage Explorer
+Company administration would like each department to have a blob container in each storage account to hold general data. The Azure portal, however, is having some issues and won't allow the tenant administrator to create the blob containers. As a workaround, Azure Storage Explorer was installed, connected to the company's subscription, and a blob container was created for the storage accounts:
+
+![Storage Explorer Blob Creation](./images/storage-se-blob-creation)
+*Figure 3: Using the Azure Storage Explorer to create blob containers for each storage account.*
+
+
