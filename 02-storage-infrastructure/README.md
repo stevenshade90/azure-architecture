@@ -32,5 +32,5 @@ foreach ($Dept in $Departments)
 
 Selecting **All Resources** will show that each storage account was created with the appropriate naming: 
 
-![Storage Account Confirmation](./images/storage-all-storage-accounts.png)
+![Storage Account Confirmation](./02-storage-infrastructure/images/storage-all-storage-accounts.png)
 *Figure 2: Image showing the successful creation of all storage accounts created by the PowerShell script.*
