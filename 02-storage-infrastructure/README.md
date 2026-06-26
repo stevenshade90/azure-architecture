@@ -39,6 +39,42 @@ Selecting **All Resources** will show that each storage account was created with
 Company administration would like each department to have a blob container in each storage account to hold general data. The Azure portal, however, is having some issues and won't allow the tenant administrator to create the blob containers. As a workaround, Azure Storage Explorer was installed, connected to the company's subscription, and a blob container was created for the storage accounts:
 
 ![Storage Explorer Blob Creation](./images/storage-se-blob-creation.png)
+
 *Figure 3: Using the Azure Storage Explorer to create blob containers for each storage account.*
+
+Oh no! The Azure portal and the Azure Storage Explorer are both having issues, and the final blob container could not be created for the IT department. As a workaround, a basic PowerShell script was executed to attempt to create the blob container:
+
+```powershell
+Connect-AzAccount
+
+$ResourceGroup = "IT-Resources"
+$StorageAccountName = "itsa001pc"
+$ContainerName = "it-blob-001"
+$Context = (Get-AzStorageAccount -ResourceGroupName $ResourceGroup -AccountName $StorageAccountName).Context;
+
+New-AzStorageContainer -Name $ContainerName -Context $Context
+```
+*Figure 4: The PowerShell script used to create the last blob container for the IT department while the Azure Portal and Storage Explorer were not working.*
+
+Luckily, running the script was successful and provisioned the blob container in the appropriate storage account:
+```plaintext
+Subscription name                  Tenant
+-----------------                  ------
+Practice Company Core Subscription Practice Company
+
+CloudBlobContainer      : Microsoft.Azure.Storage.Blob.CloudBlobContainer
+Permission              : Microsoft.Azure.Storage.Blob.BlobContainerPermissions
+AccessPolicy            :
+PublicAccess            : Off
+LastModified            : 6/26/2026 7:59:50 PM +00:00
+ContinuationToken       :
+IsDeleted               :
+VersionId               :
+BlobContainerClient     : Azure.Storage.Blobs.BlobContainerClient
+BlobContainerProperties : Azure.Storage.Blobs.Models.BlobContainerProperties
+Context                 : Microsoft.WindowsAzure.Commands.Storage.Common.AzureStorageContext
+Name                    : it-blob-001
+```
+*Figure 5: Successfully created blob container from the PowerShell script.*
 
 
