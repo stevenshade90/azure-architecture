@@ -56,7 +56,7 @@ New-AzStorageContainer -Name $ContainerName -Context $Context
 ```
 *Figure 4: The PowerShell script used to create the last blob container for the IT department while the Azure Portal and Storage Explorer were not working.*
 
-Luckily, running the script was successful and provisioned the blob container in the appropriate storage account:
+Luckily, running the script was successful and provisioned the blob container in the appropriate storage account.
 ```plaintext
 Subscription name                  Tenant
 -----------------                  ------
@@ -77,4 +77,14 @@ Name                    : it-blob-001
 ```
 *Figure 5: Successfully created blob container from the PowerShell script.*
 
+### Step 3: Enabling Soft Delete and Resource Locks
+An employee in the Engineering department jokingly mentioned that he nearly deleted resources in the `engineering-blob-001` blob. For data protection, **soft delete** was enabled for both blobs and containers, allowing data to be restored for each department.
+
+![Soft Delete Enabled](./images/storage-enable-soft-delete.png)
+*Figure 6: Soft delete enabled for blobs and containers.*
+
+The company administration would like for more safeguards to be in place to prevent the accidental deletion of any resources in the Azure tenant, both current and future resources. Rather than place a resource lock on each resource group, a lock was implemented at the subscription level, preventing current resources from being deleted, and preventing the deletion of future resources provisioned to the subscription. 
+
+![Subscription-level Resource Lock](./images/storage-resource-lock.png)
+*Figure 7: A resource lock set at the subscription level, preventing current and future resources from being deleted.*
 
