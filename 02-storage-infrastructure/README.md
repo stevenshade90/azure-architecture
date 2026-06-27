@@ -42,7 +42,7 @@ Company administration would like each department to have a blob container in ea
 
 *Figure 3: Using the Azure Storage Explorer to create blob containers for each storage account.*
 
-The Azure portal and the Storage Explorer app were having issues and the final blob couldn't be created for the IT department. As a workaround, a PowerShell script was executed to provision the blob container in the appropriate context. 
+The Azure portal and the Storage Explorer app were having issues and the final blob container couldn't be created for the IT department. As a workaround, a PowerShell script was executed to provision the blob container in the appropriate context. 
 
 ```powershell
 Connect-AzAccount
@@ -105,4 +105,8 @@ The connection was established, and the resources in the storage account were ac
 
 *Figure 10: The connection is established and the resources in the storage account are now accessible.* 
 
-### Step 5: Data Redundancy and Blob Lifecycle Management
+### Step 5: Data Redundancy, Protection, and Blob Lifecycle Management
+The company needs additional storage to hold additional company documents. A new resource group was created to hold the `generalstorage001pc` storage account. Since this account will also be holding historical company documents that won't be used often, the redundancy of this account is set to **LRS**. **Soft delete** and **versioning** were applied for extra data protection. A **lifecycle management** rule was applied as well. To reduce costs, any blobs that are not modified after 14 days will be moved to cool storage, moved to cold storage after 30 days, and moved to archive storage after 60 days.
+
+![Blob Lifecycle Management](./images/storage-blob-lifecycle-management.png)
+*Figure 11: The three established `if...then` statements to automate sending storage account documents to more cost-effective tiers.*
