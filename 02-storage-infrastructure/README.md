@@ -102,5 +102,6 @@ The SAS Token was tested in the Azure Storage Explorer app. Selecting the "open 
 The connection was established, and the resources in the storage account were accessible, as shown in the image below. 
 
 ![Succcessful Connection to Storage Account](./images/storage-successful-connection.png)
+
 *Figure 10: The connection is extablished and the resources in the storage account are now accessible.* 
 
