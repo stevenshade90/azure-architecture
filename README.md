@@ -13,7 +13,7 @@ This repository documents the creation of a Microsoft Azure tenant designed for 
 * **Objective**: Design and provision a highly available, secure, cost-optimized, and compliant storage tier to support the `Practice Company` infrastructure. 
 
 ## Future Updates
-### Phase 3: Virtual Networking and Security
-### Phase 4: Compute Resources and Load Balancing
+### Phase 3: Implementing Compute Resources 
+### Phase 4: Virtual Networking and Security
 ### Phase 5: Monitoring, Diagnostics and Backup
 
