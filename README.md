@@ -10,10 +10,14 @@ This repository documents the creation of a Microsoft Azure tenant designed for 
 
 
 ### [Phase 2: Storage Infrastructure](./02-storage-infrastructure/)
-* **Objective**: Design and provision a highly available, secure, cost-optimized, and compliant storage tier to support the `Practice Company` infrastructure. 
+* **Objective**: Design and provision a highly available, secure, cost-optimized, and compliant storage tier to support the `Practice Company` infrastructure.
+
+
+### [Phase 3: Implementing Compute Resources](./03-compute-resources
+* **Objective**: Deploy virtual machines to company resource groups, utilizing different deployment methods.
+
 
 ## Future Updates
-### Phase 3: Implementing Compute Resources 
 ### Phase 4: Virtual Networking and Security
 ### Phase 5: Monitoring, Diagnostics and Backup
 
