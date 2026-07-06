@@ -113,7 +113,7 @@ After the code executes, looking back into the HR-Resources resource group shows
 ![HR VM Image](./images/compute-vm-deployed-bicep.png)
 *Figure 7: The VM and all other resources successfully deployed to the HR resource group.*
 
-The bicep script used to deploy this VM can be found here: [needs entered]
+The bicep script used to deploy this VM can be found here: [main.bicep](./images/main.bicep)
 
 
 
