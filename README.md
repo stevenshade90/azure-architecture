@@ -13,7 +13,7 @@ This repository documents the creation of a Microsoft Azure tenant designed for 
 * **Objective**: Design and provision a highly available, secure, cost-optimized, and compliant storage tier to support the `Practice Company` infrastructure.
 
 
-### [Phase 3: Implementing Compute Resources](./03-compute-resources)
+### [Phase 3: Implementing Compute Resources](./03-implementing-compute-resources)
 * **Objective**: Deploy virtual machines to company resource groups, utilizing different deployment methods.
 
 
