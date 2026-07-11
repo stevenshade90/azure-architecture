@@ -125,6 +125,7 @@ One of the company's C# developers will be creating a website using **ASP.NET** 
 To start, very basic C# code was created using ASP.NET and HTML to have a website display some basic text.
 
 ![Basic ASP.NET Code](./images/test-site.png)
+
 *Figure 8: Basic C# code to create a website that will be used to test the Azure App Service infrastructure.*
 
 Next, a PowerShell command is used to package up all of the contents of the web app that will later be uploaded to the web app service. 
