@@ -1,7 +1,7 @@
 # Phase 3: Implement Compute Resources
 
 ## Business Scenario
-`Practice Company` needs Microsoft virtual machines deployed to department resource groups. There is also need for containers to host apps.  
+`Practice Company` needs Microsoft virtual machines deployed to department resource groups. There is also need for a company website to be hosted through an Azure Web App.  
 
 ## Step-by-Step Implementation
 ### Step 1: Automated Virtual Machine (Bicep)
@@ -114,6 +114,17 @@ After the code executes, looking back into the HR-Resources resource group shows
 *Figure 7: The VM and all other resources successfully deployed to the HR resource group.*
 
 The bicep script used to deploy this VM can be found here: [main.bicep](./images/main.bicep)
+
+### Step 2: Company Website hosted in Azure
+One of the company's C# developers will be creating a website using **ASP.NET** and **Razor pages**. Once finished, this website needs to be hosted on Azure. Doing so follows a simple procedure:
+* Create the infrastructure needed to host the web app by allocating an **Azure App Service Plan**.
+* Create an **Azure Web App** to hold the C# code that created the website.
+* Test the framework with a simple website created through ASP.NET/Razor pages to ensure the infrastructure will work as intended
+* Implement the actual company website created by the C# developer.
+
+
+
+  
 
 
 
