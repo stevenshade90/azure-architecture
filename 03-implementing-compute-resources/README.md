@@ -122,14 +122,22 @@ One of the company's C# developers will be creating a website using **ASP.NET** 
 * Test the framework with a simple website created through ASP.NET/Razor pages to ensure the infrastructure will work as intended
 * Implement the actual company website created by the C# developer.
 
+To start, very basic C# code was created using ASP.NET and HTML to have a website display some basic text.
 
+![Basic ASP.NET Code](./images/test-site.png)
+*Figure 8: Basic C# code to create a website that will be used to test the Azure App Service infrastructure.*
 
-  
+Next, a PowerShell command is used to package up all of the contents of the web app that will later be uploaded to the web app service. 
 
+![PowerShell Publishing Command](./images/ps-package-web-app.png)
+*Figure 9: The PowerShell script used to package up the basic C# web app that will be hosted in the Azure web app.*
 
+All of the published code was zipped up into a compressed file. This zipped folder was uploaded into `Kudu` 
 
+![Kudu Zip Folder Upload](./images/kudu-upload.png)
+*Figure 10: The web app .zip folder being uploaded into **Kudu**, allowing the website to deploy and be visible through the Azure Web App.*
 
+Once the .zip folder finished uploading to **Kudu**, the website is ready to test. Clicking the default domain link in the web app takes us to the test website, and everything is displaying as intended.
 
-
-
-
+![Test Site Confirmation](./images/website-test.png)
+*Figure 11: Confirmation that the web app service is working as intended, and the website is appropriately hosted.*
